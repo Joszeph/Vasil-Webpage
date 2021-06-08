@@ -1,4 +1,4 @@
-import Navbar from "./Nav/Navbar"
+import Navbar from "./Nav/NavBar"
 import Image from 'next/image'
 
 import styles from '../styles/Lang.module.css'
