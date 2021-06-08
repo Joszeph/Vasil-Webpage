@@ -1,0 +1,95 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    color:#e9e9e7;
+}
+
+.aboutUs{
+    display:flex;
+}
+
+.aboutText{
+    flex-basis: 50%;
+}
+
+.aboutImages{
+    flex-basis: 50%;
+}
+
+
+.ourTeam{
+    background-color: white;
+    background-image: url('/logo_background.webp');
+    background-repeat: no-repeat;
+    background-position-x: 1300px;
+    background-position-y: 266px;
+    
+  }
+  .teamContainet{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .ourTeamTitles{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 20px;
+  }
+  .ourTeamTitles h2{
+    margin:20px;
+    color: #e00310;
+  }
+  .ourTeamTitles h3{
+    color:#163852;
+  }
+  
+  .cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 0px 60px 0;
+  }
+  
+  .cardPicture{
+    width: 300px;
+    height: 216px;
+    background-image: url('/4m-300x216.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #c69c6d;
+  }
+  
+  .cardPicture h2{
+    padding: 41px 0px 40px 10px;
+  }
+  
+  .cardIcons{
+    padding: 18px 0px 0px 10px;
+  }
+  .cardIcons img{
+    margin:0 10px 0 0;
+  }
+  
+  .cardText{
+    width: 300px;
+    border: 1px solid #c69c6d;
+    color:#163852;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+  }
+
+
+  @media only screen and (max-width: 1239px) {
+    .ourTeam{
+        background-position-x: 743px;
+      }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .ourTeam{
+      background-position-x: 86px;
+      background-position-y: 724px;
+    }
+  }

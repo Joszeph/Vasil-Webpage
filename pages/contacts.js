@@ -69,6 +69,10 @@ const ContactUs = () => {
             .infoContacts h2 a{
                 color:#e00310;
             }
+
+            address{
+                line-height:25px;
+            }
             
             @media only screen and (max-width: 1239px) {
                 h1{
