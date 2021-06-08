@@ -1,5 +1,6 @@
 import Navbar from "./Nav/NavBar"
 import Image from 'next/image'
+import Link from 'next/link'
 
 import styles from '../styles/Lang.module.css'
 
@@ -18,7 +19,9 @@ const Header = () => {
         </div>
         <header>
             <div className="headerElement">
-            <Image src={'/Logo_Barbers_Crew.webp'} alt="Logo_Barbers_Crew" width={200} height={200}/>
+                <Link href="/">
+                <a><Image src={'/Logo_Barbers_Crew.webp'} alt="Logo_Barbers_Crew" width={200} height={200}/></a>
+                </Link>
             <Navbar />
             </div>
             <style jsx>{`

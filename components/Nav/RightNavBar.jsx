@@ -67,8 +67,8 @@ const RightNavBar = (props) => {
       <li className={router.pathname == "/about" ? "active" : ""}><Link href="/about"><a onClick={() => setOpen(!open)}>за нас</a></Link></li>
       <li className={router.pathname == "/activities" ? "active" : ""}><Link href="/activities"><a onClick={() => setOpen(!open)}>услуги и цени</a></Link></li>
       <li className={router.pathname == "/clients" ? "active" : ""}><Link href="/gallery"><a onClick={() => setOpen(!open)}>галерия</a></Link></li>
-      <li className={router.pathname == "/blog" ? "active" : ""}><Link href="/contacts"><a onClick={() => setOpen(!open)}>контакти</a></Link></li>
-      <li className={router.pathname == "/contacts" ? "active" : ""}><Link href="/reservation"><a onClick={() => setOpen(!open)}><div className="reservationBtn">за резервации</div></a></Link></li>
+      <li className={router.pathname == "/contacts" ? "active" : ""}><Link href="/contacts"><a onClick={() => setOpen(!open)}>контакти</a></Link></li>
+      <li className={router.pathname == "/reservation" ? "active" : ""}><Link href="/reservation"><a onClick={() => setOpen(!open)}><div className="reservationBtn">за резервации</div></a></Link></li>
     </Ul>
   )
 }

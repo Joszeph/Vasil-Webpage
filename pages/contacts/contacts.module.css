@@ -1,0 +1,57 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.container h1{
+    color:#e00310;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.map{
+    flex-basis: 50%;
+}
+
+.infoContacts{
+    flex-basis: 40%;
+    color:#e9e9e7;
+}
+
+.infoContacts a{
+    text-decoration: none;
+    color:#e9e9e7;
+}
+
+.infoContacts h2{
+    margin: 25px 0 8px 0;
+}
+
+.infoContacts h3 a{
+    color:#e00310;
+}
+
+@media only screen and (max-width: 1239px) {
+    .map{
+        padding:20px;
+    }
+    .infoContacts{
+        padding:20px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contacts{
+        flex-direction: column;
+    }
+    .map{
+        padding:20px;
+    }
+    .infoContacts{
+        padding:20px
+    }
+}

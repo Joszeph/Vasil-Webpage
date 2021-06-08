@@ -59,15 +59,15 @@ export default function Home() {
         "delay": 1500,
         "disableOnInteraction": false}}>
         <SwiperSlide><div className={styles.image}><Image src="/image1.webp" alt="Image1 Barbers Crew" width={400} height={400} quality={50}/></div></SwiperSlide>
-        <SwiperSlide><div className={styles.image}><Image src="/image2.webp" alt="Image2 Barbers Crew" width={400} height={400} quality={50}/></div></SwiperSlide>
+        {/* <SwiperSlide><div className={styles.image}><Image src="/image2.webp" alt="Image2 Barbers Crew" width={400} height={400} quality={50}/></div></SwiperSlide> */}
         <SwiperSlide><div className={styles.image}><Image src="/image3.webp" alt="Image3 Barbers Crew" width={400} height={400} quality={50}/></div></SwiperSlide>
         <SwiperSlide><div className={styles.image}><Image src="/image4.webp" alt="Image4 Barbers Crew" width={400} height={400} quality={50}/></div></SwiperSlide>
         <SwiperSlide><div className={styles.image}><Image src="/image5.webp" alt="Image5 Barbers Crew" width={400} height={400} quality={50}/></div></SwiperSlide>
         <SwiperSlide><div className={styles.image}><Image src="/image6.webp" alt="Image6 Barbers Crew" width={400} height={400} quality={50}/></div></SwiperSlide>
-        {/* <SwiperSlide><div className={styles.image}><Image src="/image7.webp" alt="Image7 Barbers Crew" width={400} height={400}/></div></SwiperSlide>
-        <SwiperSlide><div className={styles.image}><Image src="/image8.webp" alt="Image8 Barbers Crew" width={400} height={400}/></div></SwiperSlide>
-        <SwiperSlide><div className={styles.image}><Image src="/image9.webp" alt="Image9 Barbers Crew" width={400} height={400}/></div></SwiperSlide>
-        <SwiperSlide><div className={styles.image}><Image src="/image10.webp" alt="Image10 Barbers Crew" width={400} height={400}/></div></SwiperSlide> */}
+        {/* <SwiperSlide><div className={styles.image}><Image src="/image7.webp" alt="Image7 Barbers Crew" width={400} height={400}/></div></SwiperSlide> */}
+        {/* <SwiperSlide><div className={styles.image}><Image src="/image8.webp" alt="Image8 Barbers Crew" width={400} height={400}/></div></SwiperSlide> */}
+        <SwiperSlide><div className={styles.image}><Image src="/image9.webp" alt="Image9 Barbers Crew" width={400} height={400} quality={50}/></div></SwiperSlide>
+        {/* <SwiperSlide><div className={styles.image}><Image src="/image10.webp" alt="Image10 Barbers Crew" width={400} height={400}/></div></SwiperSlide> */}
     </Swiper>            
     </section>
     </div>

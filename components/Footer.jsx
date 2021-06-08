@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
     return ( 
@@ -50,12 +51,12 @@ const Footer = () => {
                 </div>
                 <div className="four">
                     <h3>Меню:</h3>
-                    <a href="">НАЧАЛО</a>
-                    <a href="">ЗА НАС</a>
-                    <a href="">ЦЕНИ И УСЛУГИ</a>
-                    <a href="">ГАЛЕРИЯ</a>
-                    <a href="">КОНТАКТИ</a>
-                    <a href="">ЗА РЕЗЕРВАЦИИ</a>
+                    <Link href="/"><a>НАЧАЛО</a></Link>
+                    <Link href="/about"><a>ЗА НАС</a></Link>
+                    <Link href="/"><a>ЦЕНИ И УСЛУГИ</a></Link>
+                    <Link href="/gallery"><a>ГАЛЕРИЯ</a></Link>
+                    <Link href="/contacts"><a>КОНТАКТИ</a></Link>
+                    <Link href="/"><a>ЗА РЕЗЕРВАЦИИ</a></Link>
                 </div>
             </div>
             <div className="footer2">
