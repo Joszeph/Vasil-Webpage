@@ -21,10 +21,10 @@ export default function Home() {
       </div>
       <div className={styles.mainContacts}>
         <div className={styles.socialIcons}>
-            <div className={styles.imgS}><Image src="/facebook_icon.webp" alt="facebook_icon_Barbers_Crew" width={32} height={32} quality={50}/></div>
-            <div className={styles.imgS}><Image src="/instagram_icon.webp" alt="instagram_icon_Barbers_Crew" width={32} height={32} quality={50}/></div>
-            <div className={styles.imgS}><Image src="/linkedin_icon.webp" alt="linkedin_icon_Barbers_Crew" width={32} height={32} quality={50}/></div>
-            <div className={styles.imgS}><Image src="/youtube_icon.webp" alt="youtube_icon_Barbers_Crew" width={32} height={32} quality={50}/></div>   
+            <div className={styles.imgS}><Image src="/facebook_icon.webp" alt="facebook_icon_Barbers_Crew" width={32} height={32} /></div>
+            <div className={styles.imgS}><Image src="/instagram_icon.webp" alt="instagram_icon_Barbers_Crew" width={32} height={32} /></div>
+            <div className={styles.imgS}><Image src="/linkedin_icon.webp" alt="linkedin_icon_Barbers_Crew" width={32} height={32} /></div>
+            <div className={styles.imgS}><Image src="/youtube_icon.webp" alt="youtube_icon_Barbers_Crew" width={32} height={32} /></div>   
         </div>
         <div className={styles.contactsInfo}>
             <img src="/phone_icon.webp" alt="phone_icon_Barbers_Crew"  width={32} height={32}/>
@@ -73,27 +73,27 @@ export default function Home() {
     </div>
     <section className={styles.services}>
         <h2>НАШИТЕ УСЛУГИ</h2>
-        <Image src="/mustages.webp" alt="mustages Barbers_Crew" width={200} height={32} quality={50}/>
+        <Image src="/mustages.webp" alt="mustages Barbers_Crew" width={200} height={32} />
         <h3>Далеч далеч, зад думата планини,<br/>
             далеч от страните Вокалия и Консонантия, живеят слепите текстове. </h3>
         <div className={styles.serviceCardsContainer}>
             <div className={styles.serviceCard}>
-                <Image src="/scissors.webp" alt="scissors_Barbers_Crew" width={70} height={70} quality={50}/>
+                <Image src="/scissors.webp" alt="scissors_Barbers_Crew" width={70} height={70} />
                 <h4>МЪЖКО ПОДСТРИГВАНЕ </h4>
                 <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
             </div>
             <div className={styles.serviceCard}>
-                <Image src="/razor.webp" alt="razor_Barbers_Crew" width={70} height={70} quality={50}/>
+                <Image src="/razor.webp" alt="razor_Barbers_Crew" width={70} height={70} />
                 <h4>ОФОРМЯВАНЕ НА БРАДА </h4>
                     <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
             </div>
             <div className={styles.serviceCard}>
-                <Image src="/hair-dryer.webp" alt="hair-dryer_Barbers_Crew" width={70} height={70} quality={50}/>
+                <Image src="/hair-dryer.webp" alt="hair-dryer_Barbers_Crew" width={70} height={70} />
                 <h4>СТАЙЛИНГ</h4>
                     <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
             </div>
             <div className={styles.serviceCard}>
-                <Image src="/mostache-and-glasses.webp" alt="mostache-and-glasses_Barbers_Crew" width={70} height={70} quality={50}/>
+                <Image src="/mostache-and-glasses.webp" alt="mostache-and-glasses_Barbers_Crew" width={70} height={70} />
                 <h4>ПОДСТРИГВАНЕ С МАШИНКА </h4>
                     <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
                <div className={styles.teamContainet}>
                 <div className={styles.ourTeamTitles}>
                     <h2>НАШИЯ ЕКИП</h2>
-                    <Image src="/mustages.webp" alt="mustages" width={200} height={32} quality={50}/>
+                    <Image src="/mustages.webp" alt="mustages" width={200} height={32} />
                     <h3>Екип от професионалисти,<br/>
                         нашите барбери и стилисти</h3>
                    </div>

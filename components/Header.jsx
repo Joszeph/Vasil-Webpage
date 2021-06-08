@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <header>
             <div className="headerElement">
-            <Image src={'/Logo_Barbers_Crew.webp'} alt="Logo_Barbers_Crew" width={200} height={200} quality={50}/>
+            <Image src={'/Logo_Barbers_Crew.webp'} alt="Logo_Barbers_Crew" width={200} height={200}/>
             <Navbar />
             </div>
             <style jsx>{`
