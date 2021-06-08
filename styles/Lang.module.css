@@ -1,0 +1,54 @@
+.langBar{
+    max-width: 1200px;
+    margin:0 auto;
+    text-align: right;
+    padding: 10px 0;
+}
+
+
+.switchField {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.switchField input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.switchField label {
+    font-weight: bold;
+    color: #dedede;
+    font-size: 8px;
+    text-align: center;
+    padding: 3px 9px;
+    border: 1px solid #e00310;
+}
+
+.switchField label:hover {
+    cursor: pointer;
+}
+
+.switchField input:checked + label {
+    background-color: #dedede;
+
+}
+
+.switchField label:first-of-type {
+    border-right: none;
+}
+
+.switchField label:last-of-type {
+    border-left: none;
+}
+@media only screen and (max-width: 600px) {
+    .switchField {
+        display: flex;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+}
