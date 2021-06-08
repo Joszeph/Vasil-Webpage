@@ -78,22 +78,22 @@ export default function Home() {
             далеч от страните Вокалия и Консонантия, живеят слепите текстове. </h3>
         <div className={styles.serviceCardsContainer}>
             <div className={styles.serviceCard}>
-                <Image src="/scissors.webp" alt="scissors_Barbers_Crew" width={70} height={70} />
+                <img src="/scissors.webp" alt="scissors_Barbers_Crew" width={70} height={70} />
                 <h4>МЪЖКО ПОДСТРИГВАНЕ </h4>
                 <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
             </div>
             <div className={styles.serviceCard}>
-                <Image src="/razor.webp" alt="razor_Barbers_Crew" width={70} height={70} />
+                <img src="/razor.webp" alt="razor_Barbers_Crew" width={70} height={70} />
                 <h4>ОФОРМЯВАНЕ НА БРАДА </h4>
                     <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
             </div>
             <div className={styles.serviceCard}>
-                <Image src="/hair-dryer.webp" alt="hair-dryer_Barbers_Crew" width={70} height={70} />
+                <img src="/hair-dryer.webp" alt="hair-dryer_Barbers_Crew" width={70} height={70} />
                 <h4>СТАЙЛИНГ</h4>
                     <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
             </div>
             <div className={styles.serviceCard}>
-                <Image src="/mostache-and-glasses.webp" alt="mostache-and-glasses_Barbers_Crew" width={70} height={70} />
+                <img src="/mostache-and-glasses.webp" alt="mostache-and-glasses_Barbers_Crew" width={70} height={70} />
                 <h4>ПОДСТРИГВАНЕ С МАШИНКА </h4>
                     <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
             </div>
@@ -102,7 +102,7 @@ export default function Home() {
     <section className={styles.parallax}>
         <div>
             <div className={styles.imgParallax}>
-            <Image src="/american-crew-logo.webp" alt="american-crew-logo" width={350} height={361} quality={50}/>
+            <img src="/american-crew-logo.webp" alt="american-crew-logo" width={350} height={361}/>
             </div>
             <h3>Далеч далеч, зад думата планини, далеч от страните Вокалия и Консонантия, живеят слепите текстове. </h3>
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
                <div className={styles.teamContainet}>
                 <div className={styles.ourTeamTitles}>
                     <h2>НАШИЯ ЕКИП</h2>
-                    <Image src="/mustages.webp" alt="mustages" width={200} height={32} />
+                    <img src="/mustages.webp" alt="mustages" width={200} height={32} />
                     <h3>Екип от професионалисти,<br/>
                         нашите барбери и стилисти</h3>
                    </div>
