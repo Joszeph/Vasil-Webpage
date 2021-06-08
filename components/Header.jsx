@@ -20,7 +20,7 @@ const Header = () => {
         <header>
             <div className="headerElement">
                 <Link href="/">
-                <a><Image src={'/Logo_Barbers_Crew.webp'} alt="Logo_Barbers_Crew" width={200} height={200}/></a>
+                <a><img src={'/Logo_Barbers_Crew.webp'} alt="Logo_Barbers_Crew" width={200} height={200}/></a>
                 </Link>
             <Navbar />
             </div>

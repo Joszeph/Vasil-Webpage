@@ -21,10 +21,10 @@ export default function Home() {
       </div>
       <div className={styles.mainContacts}>
         <div className={styles.socialIcons}>
-            <div className={styles.imgS}><Image src="/facebook_icon.webp" alt="facebook_icon_Barbers_Crew" width={32} height={32} /></div>
-            <div className={styles.imgS}><Image src="/instagram_icon.webp" alt="instagram_icon_Barbers_Crew" width={32} height={32} /></div>
-            <div className={styles.imgS}><Image src="/linkedin_icon.webp" alt="linkedin_icon_Barbers_Crew" width={32} height={32} /></div>
-            <div className={styles.imgS}><Image src="/youtube_icon.webp" alt="youtube_icon_Barbers_Crew" width={32} height={32} /></div>   
+            <div className={styles.imgS}><img src="/facebook_icon.webp" alt="facebook_icon_Barbers_Crew" width="32" height="32" /></div>
+            <div className={styles.imgS}><img src="/instagram_icon.webp" alt="instagram_icon_Barbers_Crew" width="32" height="32" /></div>
+            <div className={styles.imgS}><img src="/linkedin_icon.webp" alt="linkedin_icon_Barbers_Crew" width="32" height="32" /></div>
+            <div className={styles.imgS}><img src="/youtube_icon.webp" alt="youtube_icon_Barbers_Crew" width="32" height="32" /></div>   
         </div>
         <div className={styles.contactsInfo}>
             <img src="/phone_icon.webp" alt="phone_icon_Barbers_Crew"  width={32} height={32}/>
