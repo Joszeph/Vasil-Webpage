@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 const Footer = () => {
@@ -6,7 +5,7 @@ const Footer = () => {
         <footer>
             <div className="footerContainer">
                 <div className="one">
-                    <Image src="/Logo_Barbers_Crew.webp" alt="Logo_Barbers_Crew" width={200} height={200} />
+                    <img src="/Logo_Barbers_Crew.webp" alt="Logo_Barbers_Crew" />
                     <div className="footerSocialIcons">
                         <img src="/facebook_footer_icon.webp" alt="facebook_footer_icon"/>
                         <img src="/instagram_footer_icon.webp" alt="instagram_footer_icon"/>
