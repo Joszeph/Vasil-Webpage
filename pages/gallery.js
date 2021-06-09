@@ -1,4 +1,4 @@
-import PhotoGallery from '../PhotoGallery'
+import PhotoGallery from '../components/PhotoGallery'
 
 const PictureGallery = () => {
     return ( 
