@@ -9,6 +9,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
+
   li a{
     list-style-type: none;
     text-transform: uppercase;
@@ -42,7 +43,7 @@ const Ul = styled.ul`
     top: -17px;
     right: 0;
     height: 100vh;
-    width: 40vh;
+    width: 40vh;  
     padding-top:160px;
     transition: transform 0.3s ease-in-out;
     li {
