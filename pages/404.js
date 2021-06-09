@@ -7,7 +7,7 @@ const ErrorPage = () => {
             <div className="error">
                 <h1>Страницата не е намерена. Грешка 404! <br />
                     Page not found. Error 404!</h1>
-                    <Image src="/error.png" alt="Error Page Image" width={100} height={100}/>
+                    <img src="/error.png" alt="Error Page Image"  />
                     <Link href="/"><a>Обратно/Back...</a></Link>
             </div>
             <style jsx>{`
@@ -27,8 +27,12 @@ const ErrorPage = () => {
            }
 
            @media only screen and (max-width: 1239px) {
+               .error{
+                   padding:100px 0;
+               }
                h1{
                    margin: 0 20px;
+                   font-size:90%;
                }
            }
             `}</style>

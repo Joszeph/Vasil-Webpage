@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: 'Commissioner', sans-serif;
   background-color: black;
-  background-image: url('/home_head_background.webp');
+  background-image: url('/home_head_background_test.webp');
   background-repeat: no-repeat;
   /* background-size: cover; */
 }
@@ -15,4 +15,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+ body{
+  background-image: url('/home_head_background_mobile.webp')
+ }
+}
+
+@media only screen and (max-width: 1239px) {
+  body{
+  font-size: 90% ;
+  }
 }

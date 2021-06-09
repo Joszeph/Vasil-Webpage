@@ -33,10 +33,10 @@
     cursor: pointer;
 }
 
-.switchField input:checked + label {
+/* .switchField input:checked + label {
     background-color: #dedede;
 
-}
+} */
 
 .switchField label:first-of-type {
     border-right: none;

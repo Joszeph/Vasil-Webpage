@@ -1,22 +1,14 @@
 import Navbar from "./Nav/NavBar"
+import Language from '../components/Language'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import styles from '../styles/Lang.module.css'
+
 
 const Header = () => {
     return ( 
         <>
-        <div className={styles.langBar}>
-            <form className={styles.form}>
-                <div className={styles.switchField}>
-                    <input type="radio" id="radio-one" name="switch-one" value="bg" />
-                    <label htmlFor="radio-one">БГ</label>
-                    <input type="radio" id="radio-two" name="switch-one" value="en"  />
-                    <label htmlFor="radio-two">EN</label>
-                </div>
-            </form>
-        </div>
+        <Language /> 
         <header>
             <div className="headerElement">
                 <Link href="/">
