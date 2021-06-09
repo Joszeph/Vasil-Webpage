@@ -3,7 +3,7 @@ import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images"
 import { photos } from "../pages/photos"
 
-const PhotoGallery = () => {
+function PhotoGallery () {
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false)
 
@@ -44,4 +44,4 @@ const PhotoGallery = () => {
 }
 
 
-export default PhotoGallery;
+export default PhotoGallery
