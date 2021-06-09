@@ -1,17 +1,15 @@
-import React, { useState, useCallback } from "react";
-import { render } from "react-dom";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "./photos";
-import styles from './gallery.module.css'
+import React, { useState, useCallback } from "react"
+import Gallery from "react-photo-gallery"
+import Carousel, { Modal, ModalGateway } from "react-images"
+import { photos } from "./pages/photos"
 
 const PhotoGallery = () => {
     const [currentImage, setCurrentImage] = useState(0);
-    const [viewerIsOpen, setViewerIsOpen] = useState(false);
+    const [viewerIsOpen, setViewerIsOpen] = useState(false)
 
   const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
+    setCurrentImage(index)
+    setViewerIsOpen(true)
   }, []);
 
   const closeLightbox = () => {
@@ -19,7 +17,6 @@ const PhotoGallery = () => {
     setViewerIsOpen(false);
   };
     return ( 
-        <main>
           <div className="container">
             <Gallery photos={photos} onClick={openLightbox} />
             <ModalGateway>
@@ -36,18 +33,15 @@ const PhotoGallery = () => {
                 </Modal>
                 ) : null}
             </ModalGateway>
-            </div>
             <style jsx>{`
             .container{
                 max-width:1200px;
                 margin: 0 auto;
             }
             `}</style>
-        </main>
+            </div>    
      );
 }
 
 
 export default PhotoGallery;
-
-
