@@ -25,6 +25,9 @@ const ErrorPage = () => {
                color:#e9e9e7;
                margin-top:15px;
            }
+           a:hover{
+            color:#e00310;
+           }
 
            @media only screen and (max-width: 1239px) {
                .error{

@@ -6,14 +6,23 @@
 
 .aboutUs{
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
 }
 
 .aboutText{
     flex-basis: 50%;
 }
 
+.aboutText p{
+  line-height: 25px;
+  margin:0;
+}
+
 .aboutImages{
     flex-basis: 50%;
+    text-align: center;
 }
 
 
@@ -33,7 +42,7 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
     line-height: 20px;
   }
   .ourTeamTitles h2{
@@ -42,13 +51,14 @@
   }
   .ourTeamTitles h3{
     color:#163852;
+    margin:10px 0 0 0;
   }
   
   .cardContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 30px 0px 60px 0;
+    padding: 0px 0px 40px 0;
   }
   
   .cardPicture{
@@ -82,9 +92,16 @@
 
 
   @media only screen and (max-width: 1239px) {
+    .container h1{
+      margin: 20px 0px 0px 20px;
+    }
     .ourTeam{
         background-position-x: 743px;
       }
+      .aboutText{
+        flex-basis: 100%;
+        margin:0px 20px 10px 20px;
+    }
   }
 
   @media only screen and (max-width: 600px) {

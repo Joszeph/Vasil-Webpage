@@ -1,4 +1,8 @@
 import dynamic from 'next/dynamic'
+import {useEffect} from 'react'
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const GoogleMap = dynamic(() => import('../components/GoogleMap'), {
     loading: () => "Loading...",
@@ -6,25 +10,32 @@ const GoogleMap = dynamic(() => import('../components/GoogleMap'), {
   })
 
 const ContactUs = () => {
+
+    useEffect(() => {
+        AOS.init({
+          // duration : 5000
+        });
+      }, []);
+
     return ( 
         <main>
             <div className="container">
-            <h1>Свържете се с нас:</h1>
+            <h1 data-aos="fade-right">Свържете се с нас:</h1>
             <section className="contacts">
                 <div className="map"><GoogleMap /></div>
                 <div className="infoContacts">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-delay="200">
                         <h2>Телефон за резервации:</h2>
-                        <a href="0887 / 138 878">0887 / 138 878</a>
+                        <a href="tel:0887138878">0887 / 138 878</a>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-delay="400">
                         <h2><a href="">Онлайн резервации</a></h2>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-delay="800">
                         <h2>e-mail:</h2>
-                        <a href="">antonov.vasil@yahoo.com</a> 
+                        <a href="mailto:antonov.vasil@yahoo.com">antonov.vasil@yahoo.com</a> 
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-delay="1000">
                         <h2>Адрес:</h2>
                         <address>Св. св. Константин и Елена, град Варна <br />
                         Търговски център "Приморски"</address>

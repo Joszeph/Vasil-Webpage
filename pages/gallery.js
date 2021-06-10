@@ -1,10 +1,21 @@
 import PhotoGallery from '../components/PhotoGallery'
+import {useEffect} from 'react'
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PictureGallery = () => {
+
+    useEffect(() => {
+        AOS.init({
+          // duration : 5000
+        });
+      }, []);
+
     return ( 
         <main>
             <div className="mainGallery">
-                <h1>Галерия със снимки</h1>
+                <h1 data-aos="fade-right">Галерия</h1>
                     <div className="gallery">
                         <PhotoGallery />
                     </div>

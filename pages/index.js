@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import {useEffect} from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
@@ -8,35 +9,54 @@ import SwiperCore, {Autoplay} from 'swiper/core'
 
 SwiperCore.use([Autoplay]);
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Home() {
+
+    useEffect(() => {
+        AOS.init({
+          // duration : 5000
+        });
+      }, []);
+
+    /* data-aos="fade-up" 
+        data-aos="zoom-in" data-aos-delay="300"
+        data-aos="fade-up" data-aos-delay="400"
+    */
+
   return (
   <main>
      <div className={styles.mainTitles}>
-        <h1>Мъжки прически, стайлинг на коса и <br/>
+        <h1 data-aos="fade-right">Мъжки прически, стайлинг на коса и <br/>
             грижа за брадата</h1>
-        <h2>Някой от тези сайтове биват променяни с времето,<br />
-            а други по случайност или нарочно(за забавление и пр.)<br />
-            биват оставяни в този си незавършен вид.</h2>
-        <button className={styles.mainBtn}>Онлайн Резервация</button>
+        <h2 data-aos="fade-right" data-aos-delay="500">Стилният мъж си личи в тълпата не само по дрехите и обувките,<br/>
+            но и заради неговата поддържана коса и брада!<br/>
+            Доверете се на нашия екип от професионалисти,<br/>
+            които имат международен опит в създаването и оформянето на мъжка визия. </h2>
+        <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="700">Онлайн Резервация</button>
       </div>
       <div className={styles.mainContacts}>
         <div className={styles.socialIcons}>
-            <div className={styles.imgS}><img src="/facebook_icon.webp" alt="facebook_icon_Barbers_Crew" width="32" height="32" /></div>
-            <div className={styles.imgS}><img src="/instagram_icon.webp" alt="instagram_icon_Barbers_Crew" width="32" height="32" /></div>
+            <div className={styles.imgS}><Link href="https://www.facebook.com/Barbers-CREW-101048828860759"><a target="_blank"><img src="/facebook_icon.webp" alt="facebook_icon_Barbers_Crew" width="32" height="32" /></a></Link></div>
+            <div className={styles.imgS}><Link href="https://www.instagram.com/barberscrewr/"><a target="_blank"><img src="/instagram_icon.webp" alt="instagram_icon_Barbers_Crew" width="32" height="32" /></a></Link></div>
             <div className={styles.imgS}><img src="/linkedin_icon.webp" alt="linkedin_icon_Barbers_Crew" width="32" height="32" /></div>
             <div className={styles.imgS}><img src="/youtube_icon.webp" alt="youtube_icon_Barbers_Crew" width="32" height="32" /></div>   
         </div>
         <div className={styles.contactsInfo}>
             <img src="/phone_icon.webp" alt="phone_icon_Barbers_Crew"  width={32} height={32}/>
             <div>
-                <h3>0887 / 138 878</h3>
+                <h3><a href="tel:0887138 878">0887 / 138 878</a></h3>
                 <p>Телефон за резервации</p>
             </div>
             <img src="/location_icon.webp" alt="location_icon_Barbers_Crew"  width={32} height={32}/>
             <div>
-                <h3>
+            <Link href="/contacts"><a>
+            <h3>
                 Търговски център "Приморски"</h3>
                 <p>Св. св. Константин и Елена, Варна</p>
+                </a></Link>
+                
             </div>
             <img src="/clock_icon.webp" alt="clock_icon_Barbers_Crew"  width={32} height={32}/>
             <div>
@@ -46,12 +66,10 @@ export default function Home() {
         </div>
     </div>
     <section className={styles.quates}>
-                <h2>НАЙ-ДОБРИЯТ БАРБЕРШОП ВЪВ ВАРНА</h2>
-                <img src="/mustages.webp" alt="mustages Barbers_Crew" width={200} height={32}/>
-                <p>Съществуват много вариации на пасажа Lorem Ipsum,<br/>
-                     но повечето от тях са променени по един или друг начин чрез добавяне на смешни думи или разбъркване на думите,<br/>
-                      което не изглежда много достоверно. Ако искате да използвате пасаж от Lorem Ipsum, трябва да сте сигурни,<br/>
-                      че в него няма смущаващи или нецензурни думи. </p>
+                <h2 data-aos="fade-up">НАЙ-ДОБРИЯТ БАРБЕРШОП ВЪВ ВАРНА</h2>
+                <img src="/mustages.webp" alt="mustages Barbers_Crew" width={200} height={32} data-aos="zoom-in" data-aos-delay="300"/>
+                <p data-aos="fade-up" data-aos-delay="400">Запишете се сега и ще получите професионални съвети за избирането,<br />
+                    на Вашата най-добра визия и продукти спецялно за Вашият тип коса!</p>
     </section>
     <div className={styles.sliderBackground}>
     <section className={styles.sliderContainer}>
@@ -72,30 +90,31 @@ export default function Home() {
     </section>
     </div>
     <section className={styles.services}>
-        <h2>НАШИТЕ УСЛУГИ</h2>
-        <Image src="/mustages.webp" alt="mustages Barbers_Crew" width={200} height={32} />
-        <h3>Далеч далеч, зад думата планини,<br/>
-            далеч от страните Вокалия и Консонантия, живеят слепите текстове. </h3>
+        <h2 data-aos="fade-up" >НАШИТЕ УСЛУГИ</h2>
+        <Image src="/mustages.webp" alt="mustages Barbers_Crew" width={200} height={32} data-aos="zoom-in" data-aos-delay="300"/>
+        <h3>Предлагаме цялостна грижа за мъжката визия,<br />
+            избираме заедно подходящият за Вас стил на прическа и<br />
+            оформяне на брада според последните модни тенденции.</h3>
         <div className={styles.serviceCardsContainer}>
-            <div className={styles.serviceCard}>
+            <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="400">
                 <img src="/scissors.webp" alt="scissors_Barbers_Crew" width={70} height={70} />
                 <h4>МЪЖКО ПОДСТРИГВАНЕ </h4>
-                <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
+                <p>Създаване на форма за причевска според овала и формата Вашата глава.</p>
             </div>
-            <div className={styles.serviceCard}>
+            <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="600">
                 <img src="/razor.webp" alt="razor_Barbers_Crew" width={70} height={70} />
                 <h4>ОФОРМЯВАНЕ НА БРАДА </h4>
-                    <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
+                    <p>Оформяне на брада според структората на Вашето лице, челюст и гъстота на брада.</p>
             </div>
-            <div className={styles.serviceCard}>
+            <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="800">
                 <img src="/hair-dryer.webp" alt="hair-dryer_Barbers_Crew" width={70} height={70} />
                 <h4>СТАЙЛИНГ</h4>
-                    <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
+                    <p>Използваме професионални продукти подходящи за Вашият тип коса, скалп и структора на косъма.</p>
             </div>
-            <div className={styles.serviceCard}>
+            <div className={styles.serviceCard}data-aos="fade-up" data-aos-delay="1000">
                 <img src="/mostache-and-glasses.webp" alt="mostache-and-glasses_Barbers_Crew" width={70} height={70} />
                 <h4>ПОДСТРИГВАНЕ С МАШИНКА </h4>
-                    <p>Дори всемогъщата Pointing няма контрол върху слепите текстове, тя е почти неортографска.</p>
+                    <p>Създаваме различни светлосенки според стил на прическа, гъстота и структора на косъма на Вашата коса.</p>
             </div>
         </div>
     </section> 
@@ -104,26 +123,27 @@ export default function Home() {
             <div className={styles.imgParallax}>
             <img src="/american-crew-logo.webp" alt="american-crew-logo" width={350} height={361}/>
             </div>
-            <h3>Далеч далеч, зад думата планини, далеч от страните Вокалия и Консонантия, живеят слепите текстове. </h3>
+            <h3>Американ крю са едни от пионерите в козметиката и продуктите за коса,<br />
+                спецялно създадени за мъже!</h3>
         </div>
     </section>
     <section className={styles.ourTeam}>
                <div className={styles.teamContainet}>
                 <div className={styles.ourTeamTitles}>
-                    <h2>НАШИЯ ЕКИП</h2>
-                    <img src="/mustages.webp" alt="mustages" width={200} height={32} />
-                    <h3>Екип от професионалисти,<br/>
+                    <h2 data-aos="fade-up">НАШИЯ ЕКИП</h2>
+                    <img src="/mustages.webp" alt="mustages" width={200} height={32} data-aos="zoom-in" data-aos-delay="300"/>
+                    <h3 data-aos="fade-up" data-aos-delay="400">Екип от професионалисти,<br/>
                         нашите барбери и стилисти</h3>
                    </div>
                    <div className={styles.cardContainer}>
                    {/* <!-- Card --> */}
-                  <div className={styles.card}>
+                  <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
                     <div className={styles.cardPicture}>
-                        <h2>Васил <br />
+                        <h2>Васил<br />
                          Антонов</h2>
                          <div className={styles.cardIcons}>
-                             <img src="/facebook_icon.webp" alt="facebook_icon_crew" />
-                             <img src="/instagram_icon.webp" alt="instagram_icon_crew" />
+                             <Link href="https://www.facebook.com/vasil.antonov1"><a target="_blank"><img src="/facebook_icon.webp" alt="facebook_icon_crew" /></a></Link>
+                             <Link href="https://www.instagram.com/antonovasil/"><a target="_blank"><img src="/instagram_icon.webp" alt="instagram_icon_crew" /></a></Link>
                          </div>
                     </div>
                     <div className={styles.cardText}>
@@ -132,12 +152,12 @@ export default function Home() {
                   </div>
                   {/* <!-- Card End --> */}
                    {/* <!-- Card --> */}
-                  <div className={styles.card}>
+                  <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
                     <div className={styles.cardPicture}>
-                        <h2>Васил <br />
+                        <h2>Иван<br />
                          Антонов</h2>
                          <div className={styles.cardIcons}>
-                             <img src="/facebook_icon.webp" alt="facebook_icon_crew" />
+                         <Link href="https://www.facebook.com/vancaa"><a target="_blank"><img src="/facebook_icon.webp" alt="facebook_icon_crew" /></a></Link>
                              <img src="/instagram_icon.webp" alt="instagram_icon_crew" />
                          </div>
                     </div>

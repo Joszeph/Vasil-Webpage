@@ -7,8 +7,8 @@ const Footer = () => {
                 <div className="one">
                     <img src="/Logo_Barbers_Crew.webp" alt="Logo_Barbers_Crew" />
                     <div className="footerSocialIcons">
-                        <img src="/facebook_footer_icon.webp" alt="facebook_footer_icon"/>
-                        <img src="/instagram_footer_icon.webp" alt="instagram_footer_icon"/>
+                    <Link href="https://www.facebook.com/Barbers-CREW-101048828860759"><a target="_blank"><img src="/facebook_footer_icon.webp" alt="facebook_footer_icon"/></a></Link>
+                    <Link href="https://www.instagram.com/barberscrewr/"><a target="_blank"> <img src="/instagram_footer_icon.webp" alt="instagram_footer_icon"/></a></Link>
                         <img src="/linkedin_footer_icon.webp" alt="linkedin_footer_icon"/>
                         <img src="/youtube_footer_icon.webp" alt="youtube_footer_icon"/>
                     </div>
@@ -21,8 +21,9 @@ const Footer = () => {
                     <h3>Свържете се с нас:</h3>
                     <div>
                         <img src="/phone_icon.webp" alt="phone_icon" />
+                        <a href="tel:0887138 878">
                         <label>Телефон за резервации:</label><br/>
-                        <a href="0887 / 138 878">0887 / 138 878</a><br />
+                        0887 / 138 878</a><br />
                     </div>
                     <div>
                         <img src="/reserve_icon.png" alt="reserve_icon" />
@@ -30,12 +31,13 @@ const Footer = () => {
                     </div>
                     <div>
                         <img src="/email_icon.png" alt="email_icon" />
-                        <a href="">antonov.vasil@yahoo.com</a> <br />
+                        <a href="mailto:antonov.vasil@yahoo.com">antonov.vasil@yahoo.com</a><br /> 
                     </div>
                     <div>
                         <img src="/location_icon.webp" alt="location_icon" />
+                        <Link href="/contacts"><a>
                         <label>Св. св. Константин и Елена, Варна</label><br />
-                        <a href="">Търговски център "Приморски"</a>  
+                        Търговски център "Приморски"</a></Link>  
                     </div>
                 </div>
                 <div className="three">
@@ -60,7 +62,7 @@ const Footer = () => {
             </div>
             <div className="footer2">
             <div className="designInfo">
-                <p>Web Development by Mighty Mint</p>
+            <a href="mailto:iodesign@live.com"><p>Web Development by Mighty Mint</p></a>    
             </div>
             </div>
             <style jsx>{`

@@ -1,34 +1,51 @@
+import {useEffect} from 'react'
 import styles from './about.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutUs = () => {
+
+    useEffect(() => {
+        AOS.init({
+          // duration : 5000
+        });
+      }, []);
+
     return ( 
         <main>
             <div className={styles.container}>
-                <h1>За Нас:</h1>
+                <h1 data-aos="fade-right">За Нас:</h1>
                 <section className={styles.aboutUs}>
-                    <div className={styles.aboutText}>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <div className={styles.aboutText} data-aos="fade-right" data-aos-delay="300">
+                        <p>Barbers Crew е бранд, основан в Скандинавия(Норвегия) през 2019г, от братя Антонови. Основната им е цел да създават тендеции за модерни прически и стилни бради. 
+С дългогодишния си опит и доказали се в бранша там, днес те отварят врати на нова бръснарница във Варна, Св. Св. Константин и Елена. 
+Там те ще ви посрещнат с блага усмивка и обслужване на професионално ниво.</p>
                     </div>
-                    <div className={styles.aboutImages}></div>
+                    <div className={styles.aboutImages} data-aos="zoom-in" data-aos-delay="300">
+                        <Image src="/about_picture.webp" alt="" width={400} height={300} />
+                    </div>
                 </section>
             </div>
             <section className={styles.ourTeam}>
                <div className={styles.teamContainet}>
                 <div className={styles.ourTeamTitles}>
-                    <h2>НАШИЯ ЕКИП</h2>
-                    <img src="/mustages.webp" alt="mustages" width={200} height={32} />
-                    <h3>Екип от професионалисти,<br/>
+                    <h2 data-aos="fade-up">НАШИЯ ЕКИП</h2>
+                    <img src="/mustages.webp" alt="mustages" width={200} height={32} data-aos="zoom-in" data-aos-delay="300"/>
+                    <h3 data-aos="fade-up" data-aos-delay="400">Екип от професионалисти,<br/>
                         нашите барбери и стилисти</h3>
                    </div>
                    <div className={styles.cardContainer}>
                    {/* <!-- Card --> */}
-                  <div className={styles.card}>
+                  <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
                     <div className={styles.cardPicture}>
-                        <h2>Васил <br />
+                        <h2>Васил<br />
                          Антонов</h2>
                          <div className={styles.cardIcons}>
-                             <img src="/facebook_icon.webp" alt="facebook_icon_crew" />
-                             <img src="/instagram_icon.webp" alt="instagram_icon_crew" />
+                             <Link href="https://www.facebook.com/vasil.antonov1"><a target="_blank"><img src="/facebook_icon.webp" alt="facebook_icon_crew" /></a></Link>
+                             <Link href="https://www.instagram.com/antonovasil/"><a target="_blank"><img src="/instagram_icon.webp" alt="instagram_icon_crew" /></a></Link>
                          </div>
                     </div>
                     <div className={styles.cardText}>
@@ -37,12 +54,12 @@ const AboutUs = () => {
                   </div>
                   {/* <!-- Card End --> */}
                    {/* <!-- Card --> */}
-                  <div className={styles.card}>
+                  <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
                     <div className={styles.cardPicture}>
-                        <h2>Васил <br />
+                        <h2>Иван<br />
                          Антонов</h2>
                          <div className={styles.cardIcons}>
-                             <img src="/facebook_icon.webp" alt="facebook_icon_crew" />
+                         <Link href="https://www.facebook.com/vancaa"><a target="_blank"><img src="/facebook_icon.webp" alt="facebook_icon_crew" /></a></Link>
                              <img src="/instagram_icon.webp" alt="instagram_icon_crew" />
                          </div>
                     </div>
