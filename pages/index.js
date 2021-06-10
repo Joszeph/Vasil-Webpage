@@ -1,11 +1,15 @@
 import {useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from "next/router";
 import styles from '../styles/Home.module.css'
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/swiper.min.css"
 import SwiperCore, {Autoplay} from 'swiper/core'
+
+import bg from '../locales/bg'
+import en from '../locales/en'
 
 SwiperCore.use([Autoplay]);
 
@@ -13,6 +17,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
+
+    const router = useRouter()
+
+    const { locale } = router
+    const t = locale === 'bg' ? bg : en
 
     useEffect(() => {
         AOS.init({
@@ -28,13 +37,13 @@ export default function Home() {
   return (
   <main>
      <div className={styles.mainTitles}>
-        <h1 data-aos="fade-right">Мъжки прически, стайлинг на коса и <br/>
-            грижа за брадата</h1>
-        <h2 data-aos="fade-right" data-aos-delay="500">Стилният мъж си личи в тълпата не само по дрехите и обувките,<br/>
-            но и заради неговата поддържана коса и брада!<br/>
-            Доверете се на нашия екип от професионалисти,<br/>
-            които имат международен опит в създаването и оформянето на мъжка визия. </h2>
-        <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="700">Онлайн Резервация</button>
+        <h1 data-aos="fade-right">{t.h1a}<br/>
+            {t.h1b}</h1>
+        <h2 data-aos="fade-right" data-aos-delay="500">{t.h2a}<br/>
+            {t.h2b}<br/>
+            {t.h2c}<br/>
+            {t.h2d}</h2>
+        <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="700">{t.button}</button>
       </div>
       <div className={styles.mainContacts}>
         <div className={styles.socialIcons}>
@@ -47,29 +56,29 @@ export default function Home() {
             <img src="/phone_icon.webp" alt="phone_icon_Barbers_Crew"  width={32} height={32}/>
             <div>
                 <h3><a href="tel:0887138 878">0887 / 138 878</a></h3>
-                <p>Телефон за резервации</p>
+                <p>{t.telP}</p>
             </div>
             <img src="/location_icon.webp" alt="location_icon_Barbers_Crew"  width={32} height={32}/>
             <div>
             <Link href="/contacts"><a>
             <h3>
-                Търговски център "Приморски"</h3>
-                <p>Св. св. Константин и Елена, Варна</p>
+                {t.addH3}</h3>
+                <p>{t.addP}</p>
                 </a></Link>
                 
             </div>
             <img src="/clock_icon.webp" alt="clock_icon_Barbers_Crew"  width={32} height={32}/>
             <div>
-                <h3>Понеделник - Събота</h3>
-                <p>10:00 - 20:00ч.</p>
+                <h3>{t.workH3}</h3>
+                <p>{t.workH}</p>
             </div>
         </div>
     </div>
     <section className={styles.quates}>
-                <h2 data-aos="fade-up">НАЙ-ДОБРИЯТ БАРБЕРШОП ВЪВ ВАРНА</h2>
+                <h2 data-aos="fade-up">{t.s1H1}</h2>
                 <img src="/mustages.webp" alt="mustages Barbers_Crew" width={200} height={32} data-aos="zoom-in" data-aos-delay="300"/>
-                <p data-aos="fade-up" data-aos-delay="400">Запишете се сега и ще получите професионални съвети за избирането,<br />
-                    на Вашата най-добра визия и продукти спецялно за Вашият тип коса!</p>
+                <p data-aos="fade-up" data-aos-delay="400">{t.s1P1}<br />
+                    {t.s1P2}</p>
     </section>
     <div className={styles.sliderBackground}>
     <section className={styles.sliderContainer}>
@@ -90,31 +99,31 @@ export default function Home() {
     </section>
     </div>
     <section className={styles.services}>
-        <h2 data-aos="fade-up" >НАШИТЕ УСЛУГИ</h2>
+        <h2 data-aos="fade-up" >{t.s2H1}</h2>
         <Image src="/mustages.webp" alt="mustages Barbers_Crew" width={200} height={32} data-aos="zoom-in" data-aos-delay="300"/>
-        <h3>Предлагаме цялостна грижа за мъжката визия,<br />
-            избираме заедно подходящият за Вас стил на прическа и<br />
-            оформяне на брада според последните модни тенденции.</h3>
+        <h3>{t.s2H3a},<br />
+            {t.s2H3b}<br />
+            {t.s2H3c}</h3>
         <div className={styles.serviceCardsContainer}>
             <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="400">
                 <img src="/scissors.webp" alt="scissors_Barbers_Crew" width={70} height={70} />
-                <h4>МЪЖКО ПОДСТРИГВАНЕ </h4>
-                <p>Създаване на форма за причевска според овала и формата Вашата глава.</p>
+                <h4>{t.s2H4a}</h4>
+                <p>{t.s2h4pa}</p>
             </div>
             <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="600">
                 <img src="/razor.webp" alt="razor_Barbers_Crew" width={70} height={70} />
-                <h4>ОФОРМЯВАНЕ НА БРАДА </h4>
-                    <p>Оформяне на брада според структората на Вашето лице, челюст и гъстота на брада.</p>
+                <h4>{t.s2H4b}</h4>
+                    <p>{t.s2h4pb}</p>
             </div>
             <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="800">
                 <img src="/hair-dryer.webp" alt="hair-dryer_Barbers_Crew" width={70} height={70} />
-                <h4>СТАЙЛИНГ</h4>
-                    <p>Използваме професионални продукти подходящи за Вашият тип коса, скалп и структора на косъма.</p>
+                <h4>{t.s2H4c}</h4>
+                    <p>{t.s2h4pc}</p>
             </div>
             <div className={styles.serviceCard}data-aos="fade-up" data-aos-delay="1000">
                 <img src="/mostache-and-glasses.webp" alt="mostache-and-glasses_Barbers_Crew" width={70} height={70} />
-                <h4>ПОДСТРИГВАНЕ С МАШИНКА </h4>
-                    <p>Създаваме различни светлосенки според стил на прическа, гъстота и структора на косъма на Вашата коса.</p>
+                <h4>{t.s2H4d}</h4>
+                    <p>{t.s2h4pd}</p>
             </div>
         </div>
     </section> 
