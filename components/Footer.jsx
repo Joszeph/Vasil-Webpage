@@ -1,6 +1,16 @@
+import { useRouter } from "next/router";
 import Link from 'next/link'
 
+import bg from '../locales/bg'
+import en from '../locales/en'
+
 const Footer = () => {
+
+    const router = useRouter()
+
+    const { locale } = router
+    const t = locale === 'bg' ? bg : en
+
     return ( 
         <footer>
             <div className="footerContainer">
@@ -18,16 +28,16 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="two">
-                    <h3>Свържете се с нас:</h3>
+                    <h3>{t.fH3}</h3>
                     <div>
                         <img src="/phone_icon.webp" alt="phone_icon" />
                         <a href="tel:0887138 878">
-                        <label>Телефон за резервации:</label><br/>
+                        <label>{t.fPhone}</label><br/>
                         0887 / 138 878</a><br />
                     </div>
                     <div>
                         <img src="/reserve_icon.png" alt="reserve_icon" />
-                        <a href="">Онлайн резервации</a> <br />
+                        <a href="">{t.onlineR}</a> <br />
                     </div>
                     <div>
                         <img src="/email_icon.png" alt="email_icon" />
@@ -36,28 +46,28 @@ const Footer = () => {
                     <div>
                         <img src="/location_icon.webp" alt="location_icon" />
                         <Link href="/contacts"><a>
-                        <label>Св. св. Константин и Елена, Варна</label><br />
-                        Търговски център "Приморски"</a></Link>  
+                        <label>{t.addressA}</label><br />
+                        {t.addressB}</a></Link>  
                     </div>
                 </div>
                 <div className="three">
-                    <h3>Работно време:</h3>
-                        <p>Понеделник 10:00 - 20:00ч.</p>
-                        <p>Вторник 10:00 - 20:00ч.</p>
-                        <p>Сряда 10:00 - 20:00ч.</p>
-                        <p>Четвертък 10:00 - 20:00ч.</p>
-                        <p>Петък 10:00 - 20:00ч.</p>
-                        <p>Събота 10:00 - 20:00ч.</p>
-                        <p>Неделя 12:00 - 18:00ч.</p>
+                    <h3>{t.wTime}</h3>
+                        <p>{t.Monday}</p>
+                        <p>{t.Tuesday}</p>
+                        <p>{t.Wednesday}</p>
+                        <p>{t.Thursday}</p>
+                        <p>{t.Friday}</p>
+                        <p>{t.Saturday}</p>
+                        <p>{t.Sunday}</p>
                 </div>
                 <div className="four">
-                    <h3>Меню:</h3>
-                    <Link href="/"><a>НАЧАЛО</a></Link>
-                    <Link href="/about"><a>ЗА НАС</a></Link>
-                    <Link href="/"><a>ЦЕНИ И УСЛУГИ</a></Link>
-                    <Link href="/gallery"><a>ГАЛЕРИЯ</a></Link>
-                    <Link href="/contacts"><a>КОНТАКТИ</a></Link>
-                    <Link href="/"><a>ЗА РЕЗЕРВАЦИИ</a></Link>
+                    <h3>{t.fMenu}</h3>
+                    <Link href="/"><a>{t.fBtn1}</a></Link>
+                    <Link href="/about"><a>{t.fBtn2}</a></Link>
+                    <Link href="/"><a>{t.fBtn3}</a></Link>
+                    <Link href="/gallery"><a>{t.fBt4}</a></Link>
+                    <Link href="/contacts"><a>{t.fBtn5}</a></Link>
+                    <Link href="/"><a>{t.fBtn6}</a></Link>
                 </div>
             </div>
             <div className="footer2">

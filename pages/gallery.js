@@ -1,10 +1,19 @@
 import PhotoGallery from '../components/PhotoGallery'
 import {useEffect} from 'react'
+import {useRouter} from 'next/router'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import bg from '../locales/bg'
+import en from '../locales/en'
+
 const PictureGallery = () => {
+
+    const router = useRouter()
+
+    const { locale } = router
+    const t = locale === 'bg' ? bg : en
 
     useEffect(() => {
         AOS.init({
@@ -15,7 +24,7 @@ const PictureGallery = () => {
     return ( 
         <main>
             <div className="mainGallery">
-                <h1 data-aos="fade-right">Галерия</h1>
+                <h1 data-aos="fade-right">{t.h1Gallery}</h1>
                     <div className="gallery">
                         <PhotoGallery />
                     </div>

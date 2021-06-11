@@ -43,7 +43,7 @@ export default function Home() {
             {t.h2b}<br/>
             {t.h2c}<br/>
             {t.h2d}</h2>
-        <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="700">{t.button}</button>
+        <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="500">{t.button}</button>
       </div>
       <div className={styles.mainContacts}>
         <div className={styles.socialIcons}>
@@ -132,46 +132,46 @@ export default function Home() {
             <div className={styles.imgParallax}>
             <img src="/american-crew-logo.webp" alt="american-crew-logo" width={350} height={361}/>
             </div>
-            <h3>Американ крю са едни от пионерите в козметиката и продуктите за коса,<br />
-                спецялно създадени за мъже!</h3>
+            <h3>{t.s3H1}<br />
+                {t.s3H1a}</h3>
         </div>
     </section>
     <section className={styles.ourTeam}>
                <div className={styles.teamContainet}>
                 <div className={styles.ourTeamTitles}>
-                    <h2 data-aos="fade-up">НАШИЯ ЕКИП</h2>
+                    <h2 data-aos="fade-up">{t.s4H2}</h2>
                     <img src="/mustages.webp" alt="mustages" width={200} height={32} data-aos="zoom-in" data-aos-delay="300"/>
-                    <h3 data-aos="fade-up" data-aos-delay="400">Екип от професионалисти,<br/>
-                        нашите барбери и стилисти</h3>
+                    <h3 data-aos="fade-up" data-aos-delay="400">{t.s4H3}<br/>
+                        {t.s4H3a}</h3>
                    </div>
                    <div className={styles.cardContainer}>
                    {/* <!-- Card --> */}
                   <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
                     <div className={styles.cardPicture}>
-                        <h2>Васил<br />
-                         Антонов</h2>
+                        <h2>{t.name1}<br />
+                        {t.name2}</h2>
                          <div className={styles.cardIcons}>
                              <Link href="https://www.facebook.com/vasil.antonov1"><a target="_blank"><img src="/facebook_icon.webp" alt="facebook_icon_crew" /></a></Link>
                              <Link href="https://www.instagram.com/antonovasil/"><a target="_blank"><img src="/instagram_icon.webp" alt="instagram_icon_crew" /></a></Link>
                          </div>
                     </div>
                     <div className={styles.cardText}>
-                        <p>Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от "de Finibus Bonorum et Malorum" на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г.</p>
+                        <p>{t.nameText}</p>
                     </div>
                   </div>
                   {/* <!-- Card End --> */}
                    {/* <!-- Card --> */}
                   <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
                     <div className={styles.cardPicture}>
-                        <h2>Иван<br />
-                         Антонов</h2>
+                        <h2>{t.name1a}<br />
+                        {t.name2a}</h2>
                          <div className={styles.cardIcons}>
                          <Link href="https://www.facebook.com/vancaa"><a target="_blank"><img src="/facebook_icon.webp" alt="facebook_icon_crew" /></a></Link>
                              <img src="/instagram_icon.webp" alt="instagram_icon_crew" />
                          </div>
                     </div>
                     <div className={styles.cardText}>
-                        <p>Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от "de Finibus Bonorum et Malorum" на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г.</p>
+                        <p>{t.nameText2}</p>
                     </div>
                   </div>
                   {/* <!-- Card End --> */}

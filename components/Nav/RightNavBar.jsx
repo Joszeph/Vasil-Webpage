@@ -69,7 +69,7 @@ const RightNavBar = (props) => {
       <li className={router.pathname == "/activities" ? "active" : ""}><Link href="/activities"><a onClick={() => setOpen(!open)}>{t.activities}</a></Link></li>
       <li className={router.pathname == "/clients" ? "active" : ""}><Link href="/gallery"><a onClick={() => setOpen(!open)}>{t.gallery}</a></Link></li>
       <li className={router.pathname == "/contacts" ? "active" : ""}><Link href="/contacts"><a onClick={() => setOpen(!open)}>{t.contacts}</a></Link></li>
-      <li className={router.pathname == "/reservation" ? "active" : ""}><Link href="/reservation"><a onClick={() => setOpen(!open)}><div className="reservationBtn">{t.appointment}</div></a></Link></li>
+      <li className={router.pathname == "/reservation" ? "active" : ""}><Link href="https://calendly.com/jozeph/appointments"><a target="_blank" onClick={() => setOpen(!open)}><div className="reservationBtn">{t.appointment}</div></a></Link></li>
     </Ul>
   )
 }

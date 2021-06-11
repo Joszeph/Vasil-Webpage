@@ -20,6 +20,13 @@
   margin:0;
 }
 
+.scissors{
+  display:flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+
 .aboutImages{
     flex-basis: 50%;
     text-align: center;

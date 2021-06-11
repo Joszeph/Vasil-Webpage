@@ -10,7 +10,7 @@ class MyDocument extends Document {
         return (
             <Html lang="bg">
             <Head>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/Barbers_Crew_fav_icon.ico" />
                 <link rel="preload"/>
                 <meta name="theme-color" content="#33333"/>
                 <meta property="og:image" content="/logo.png"/>

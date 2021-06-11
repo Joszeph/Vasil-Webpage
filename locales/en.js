@@ -4,7 +4,7 @@ export default{
     about:'about us',
     activities:'services and prices',
     gallery:'gallery',
-    contacts:'contacts',
+    contacts:'contact us',
     appointment:'set appointment',
     //Home Main
     h1a:"Men's hairstyles, hair styling and",
@@ -14,7 +14,7 @@ export default{
     h2c:'Trust our team of professionals,',
     h2d:'who have international experience in creating and shaping a male vision.',
     button:'online appointment',
-    telP:'phone for appointments',
+    telP:'Phone for appointments',
     addH3:'Primorski Shopping Center',
     addP:'St. St. Constantine and Helena, Varna',
     workH3:'Monday - Sunday',
@@ -25,8 +25,8 @@ export default{
      s1P2:'of your best look and products especially for your hair type!',
     //Section 2
     s2H1:'OUR SERVICES',
-    s2H3a:'Предлагаме цялостна грижа за мъжката визия,',
-    s2H3b:'We offer complete care for the male vision,',
+    s2H3a:'We offer complete care for the male vision,',
+    s2H3b:'we choose together the right style of hairstyle and',
     s2H3c:'beard shaping according to the latest fashion trends.',
 
     s2H4a:'MAN HAIRCUT',
@@ -39,5 +39,52 @@ export default{
     s2h4pc:'We use professional products suitable for your hair type, scalp and hair structure.',
 
     s2H4d:'CUTTING WITH A MACHINE',
-    s2h4pd:'Creating different light shades according to the style of hair, density and structure of the hair on your hair.ме различни светлосенки според стил на прическа, гъстота и структора на косъма на Вашата коса.',
+    s2h4pd:'Creating different light shades according to the style of hair, density and structure of the hair on your hair.',
+    //Section 3
+    s3H1:'American Crew is one of the pioneers in cosmetics and hair products,',
+    s3H1a:'specially designed for men!',
+    //Section 4
+    s4H2:'OUR TEAM',
+    s4H3:'A team of professionals,',
+    s4H3a:'our barbers and stylists',
+     //Section 4 Cards
+     name1:'Vasil',
+     name2:'Antonov',
+     nameText:'En text',
+     name1a:'Ivan',
+     name2a:'Antonov',
+     nameText2:'en Text',
+     //Footer
+    fH3:'Contact us:',
+    fPhone:'Phone for appointments:',
+    onlineR:'Online appointments',
+    addressA:'St. St. Constantine and Helena, Varna',
+    addressB:'Primorski Shopping Center',
+    wTime:'Work time:',
+    Monday:'Monday 10am - 8pm', 
+    Tuesday:'Tuesday 10am - 8pm', 
+    Wednesday:'Wednesday 10am - 8pm', 
+    Thursday:'Thursday 10am - 8pm', 
+    Friday:'Friday 10am - 8pm', 
+    Saturday:'Saturday 10am - 8pm', 
+    Sunday:'Sunday 12pm - 6pm',
+
+    fMenu:'Меню:',
+    fBtn1:'HOME',
+    fBtn2:'ABOUT US',
+    fBtn3:'SERVICES AND PRICES',
+    fBtn4:'GALLERY',
+    fBtn5:'CONTACT US',
+    fBtn6:'SET APPOINTMENT',
+            
+     //About Us Page
+     h1About:'About Us:',
+     aboutText:'Barbers Crew is a brand founded in Scandinavia (Norway) in 2019, by the Antonov brothers. Their main goal is to create trends for modern hairstyles and stylish beards. With their many years of experience and proven in the industry there, today they open the doors of a new barber shop in Varna, St. St. Constantine and Helena. There they will greet you with a kind smile and service on a professional level.',
+
+    //Gallery Page
+    h1Gallery:'Gallery',
+
+    //Contacts Page
+    h1Contacts:'Contact with us:',
+    h2Address:'Address:',
     }

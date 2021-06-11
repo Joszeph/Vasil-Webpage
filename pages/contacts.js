@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import {useEffect} from 'react'
+import {useRouter} from 'next/router'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,7 +10,15 @@ const GoogleMap = dynamic(() => import('../components/GoogleMap'), {
     ssr: false
   })
 
+  import bg from '../locales/bg'
+  import en from '../locales/en'
+
 const ContactUs = () => {
+
+    const router = useRouter()
+
+    const { locale } = router
+    const t = locale === 'bg' ? bg : en
 
     useEffect(() => {
         AOS.init({
@@ -20,25 +29,25 @@ const ContactUs = () => {
     return ( 
         <main>
             <div className="container">
-            <h1 data-aos="fade-right">Свържете се с нас:</h1>
+            <h1 data-aos="fade-right">{t.h1Contacts}</h1>
             <section className="contacts">
                 <div className="map"><GoogleMap /></div>
                 <div className="infoContacts">
                     <div data-aos="zoom-in" data-aos-delay="200">
-                        <h2>Телефон за резервации:</h2>
+                        <h2>{t.fPhone}</h2>
                         <a href="tel:0887138878">0887 / 138 878</a>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="400">
-                        <h2><a href="">Онлайн резервации</a></h2>
+                        <h2><a href="">{t.onlineR}</a></h2>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="800">
                         <h2>e-mail:</h2>
                         <a href="mailto:antonov.vasil@yahoo.com">antonov.vasil@yahoo.com</a> 
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="1000">
-                        <h2>Адрес:</h2>
-                        <address>Св. св. Константин и Елена, град Варна <br />
-                        Търговски център "Приморски"</address>
+                        <h2>{t.h2Address}</h2>
+                        <address>{t.addressA}<br />
+                        {t.addressB}</address>
                     </div>
                 </div>
             </section>
@@ -52,6 +61,10 @@ const ContactUs = () => {
             
             .container h1{
                 color:#e9e9e7;
+            }
+
+            h2{
+                text-shadow: 2px 1px 4px #000000a6;
             }
             
             .contacts{
