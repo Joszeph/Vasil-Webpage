@@ -37,7 +37,8 @@ const Footer = () => {
                     </div>
                     <div>
                         <img src="/reserve_icon.png" alt="reserve_icon" />
-                        <a href="">{t.onlineR}</a> <br />
+                        <Link href="https://calendly.com/jozeph/appointments">
+                        <a target="_blank">{t.onlineR}</a></Link> <br />
                     </div>
                     <div>
                         <img src="/email_icon.png" alt="email_icon" />
@@ -67,7 +68,7 @@ const Footer = () => {
                     <Link href="/"><a>{t.fBtn3}</a></Link>
                     <Link href="/gallery"><a>{t.fBt4}</a></Link>
                     <Link href="/contacts"><a>{t.fBtn5}</a></Link>
-                    <Link href="/"><a>{t.fBtn6}</a></Link>
+                    <Link href="https://calendly.com/jozeph/appointments"><a target="_blank">{t.fBtn6}</a></Link>
                 </div>
             </div>
             <div className="footer2">

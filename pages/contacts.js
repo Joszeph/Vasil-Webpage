@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 import {useEffect} from 'react'
 import {useRouter} from 'next/router'
+import Link from 'next/link'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,7 +39,7 @@ const ContactUs = () => {
                         <a href="tel:0887138878">0887 / 138 878</a>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="400">
-                        <h2><a href="">{t.onlineR}</a></h2>
+                        <h2><Link href="https://calendly.com/jozeph/appointments"><a target="_blank">{t.onlineR}</a></Link></h2>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="800">
                         <h2>e-mail:</h2>

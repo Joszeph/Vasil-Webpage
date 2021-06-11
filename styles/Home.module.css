@@ -20,6 +20,7 @@
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .mainBtn:hover{
@@ -31,6 +32,15 @@
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.mainBtn a{
+  color:#e9e9e7;
+}
+
+.mainBtn a:hover{
+  color:#e00310;
 }
 
 .mainContacts{
