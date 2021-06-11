@@ -1,12 +1,12 @@
 
 export const photos = [
     {
-      src: '/pics/1.jpg',
+      src: '/pics/1a.jpg',
       width: 1.5,
       height: 2
     },
     {
-      src: '/pics/2.jpg',
+      src: '/pics/2a.jpg',
       width: 1.5,
       height: 2
     },
@@ -81,32 +81,32 @@ export const photos = [
       height: 1.5
     },
     {
-      src: '/pics/17.jpg',
+      src: '/pics/17a.jpg',
       width: 1.5,
       height: 2
     },
     {
-      src: '/pics/18.jpg',
+      src: '/pics/18a.jpg',
       width: 1.5,
       height: 2
     },
     {
-      src: '/pics/19.jpg',
+      src: '/pics/19a.jpg',
       width: 1.5,
       height: 2
     },
     {
-      src: '/pics/20.jpg',
+      src: '/pics/20a.jpg',
       width: 2,
       height: 2
     },
     {
-      src: '/pics/21.jpg',
+      src: '/pics/21a.jpg',
       width: 3,
       height: 2
     },
     {
-      src: '/pics/22.jpg',
+      src: '/pics/22a.jpg',
       width: 3,
       height: 2
     },
