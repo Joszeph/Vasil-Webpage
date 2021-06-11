@@ -39,11 +39,11 @@ export default function Home() {
      <div className={styles.mainTitles}>
         <h1 data-aos="fade-right">{t.h1a}<br/>
             {t.h1b}</h1>
-        <h2 data-aos="fade-right" data-aos-delay="500">{t.h2a}<br/>
+        <h2 data-aos="fade-right" data-aos-delay="100">{t.h2a}<br/>
             {t.h2b}<br/>
             {t.h2c}<br/>
             {t.h2d}</h2>
-        <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="500">{t.button}</button>
+        <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="150">{t.button}</button>
       </div>
       <div className={styles.mainContacts}>
         <div className={styles.socialIcons}>
