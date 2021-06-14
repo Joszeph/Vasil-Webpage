@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
@@ -12,7 +13,19 @@ import "aos/dist/aos.css";
 import bg from '../../locales/bg'
 import en from '../../locales/en'
 
+import{NextSeo} from 'next-seo'
+
 const Prices = ({posts, body}) => {
+
+  const SEO = {
+    title: "Barbers Crew - Барбершоп Варна | Услуги и Цени",
+    description: "Мъжко Подстригване и Бръснене във Варна - Барбершоп | Услуги и Цени",
+
+    openGraph:{
+        title: "Barbers Crew - Барбершоп Варна | Услуги и Цени",
+        description: "Мъжко Подстригване и Бръснене във Варна - Барбершоп | Услуги и Цени",
+    }
+}
 
     const router = useRouter()
 
@@ -43,6 +56,7 @@ const Prices = ({posts, body}) => {
 
     return ( 
         <main className={styles.mainContainer}>
+          <NextSeo {...SEO} />
             <h1 data-aos="fade-right">{t.h1Prices}</h1>
             <div className={styles.container}>
                 <div data-aos="fade-right" data-aos-delay="300">
@@ -54,7 +68,21 @@ const Prices = ({posts, body}) => {
                 )):<>No Prices Yet</>}
                 </div>
                 <div className={styles.img} data-aos="zoom-in" data-aos-delay="300">  
-                <Image src="/image8.webp" alt="price_page_image" width={400} height={400} />
+                {/* <Image src="/image8.webp" alt="price_page_image" width={400} height={400} /> */}
+                <div className={styles.three}>
+                    <h3>{t.wTime}</h3>
+                        <p>{t.Monday}</p>
+                        <p>{t.Tuesday}</p>
+                        <p>{t.Wednesday}</p>
+                        <p>{t.Thursday}</p>
+                        <p>{t.Friday}</p>
+                        <p>{t.Saturday}</p>
+                        <p>{t.Sunday}</p>
+                        <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="50">
+            <Link href="https://calendly.com/barbers_crew/booking"><a target="_blank">{t.button}</a></Link>
+            </button>
+                </div>
+              
                 </div>
             </div>
         </main>

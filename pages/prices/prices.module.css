@@ -16,7 +16,6 @@
     padding:20px 0;
 }
 .divPrices{
-    border-radius: 15px;
     padding: 5px 20px; 
     background-color: #e9e9e79d;
     color:#163852;
@@ -42,6 +41,44 @@
     justify-content: center;
 }
 
+.mainBtn{
+    margin-top: 40px;
+    color: #e9e9e7;
+    background-color: transparent;
+    border: 1px solid #e9e9e7;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .mainBtn:hover{
+    margin-top: 40px;
+    color: #163852;
+    background-color: #e9e9e79d;
+    border: 1px solid #e9e9e7;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .mainBtn a{
+      text-decoration: none;
+      color:#e00310;
+  }
+
+  .three{
+    text-shadow: 8px 4px 5px black;
+  }
+
+  .three h3{
+      color:#e00310;
+  }
+
+
 @media only screen and (max-width: 1239px) {
     .container{
         flex-wrap: wrap;
@@ -52,8 +89,17 @@
     }
     .mainContainer h1{
         margin: 20px 0px 20px 20px;
+
     }
     .img{
         display: none;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    .mainContainer h1{
+        margin: 20px 0px 0px 20px;
+    }
+}
+

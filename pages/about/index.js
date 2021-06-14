@@ -10,7 +10,19 @@ import "aos/dist/aos.css";
 import bg from '../../locales/bg'
 import en from '../../locales/en'
 
+import{NextSeo} from 'next-seo'
+
 const AboutUs = () => {
+
+    const SEO = {
+        title: "Barbers Crew - Барбершоп Варна | За Нас",
+        description: "Мъжко Подстригване и Бръснене във Варна - Барбершоп | За Нас",
+    
+        openGraph:{
+            title: "Barbers Crew - Барбершоп Варна | За Нас",
+            description: "Мъжко Подстригване и Бръснене във Варна - Барбершоп | За Нас",
+        }
+    }
 
     const router = useRouter()
 
@@ -25,6 +37,7 @@ const AboutUs = () => {
 
     return ( 
         <main>
+            <NextSeo {...SEO} />
             <div className={styles.container}>
                 <h1 data-aos="fade-right">{t.h1About}</h1>
                 <section className={styles.aboutUs}>
@@ -58,7 +71,7 @@ const AboutUs = () => {
                    <div className={styles.cardContainer}>
                    {/* <!-- Card --> */}
                   <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
-                    <div className={styles.cardPicture}>
+                    <div className={styles.cardPicture1}>
                         <h2>{t.name1}<br />
                         {t.name2}</h2>
                          <div className={styles.cardIcons}>
@@ -73,7 +86,7 @@ const AboutUs = () => {
                   {/* <!-- Card End --> */}
                    {/* <!-- Card --> */}
                   <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
-                    <div className={styles.cardPicture}>
+                    <div className={styles.cardPicture2}>
                         <h2>{t.name1a}<br />
                         {t.name2a}</h2>
                          <div className={styles.cardIcons}>

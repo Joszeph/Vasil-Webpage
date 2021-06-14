@@ -6,6 +6,8 @@ import Link from 'next/link'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import{NextSeo} from 'next-seo'
+
 const GoogleMap = dynamic(() => import('../components/GoogleMap'), {
     loading: () => "Loading...",
     ssr: false
@@ -15,6 +17,16 @@ const GoogleMap = dynamic(() => import('../components/GoogleMap'), {
   import en from '../locales/en'
 
 const ContactUs = () => {
+
+    const SEO = {
+        title: "Barbers Crew - Барбершоп Варна | Контакти | Свържете се с нас",
+        description: "Мъжко Подстригване и Бръснене във Варна - Барбершоп | Контакти | Свържете се с нас",
+    
+        openGraph:{
+            title: "Barbers Crew - Барбершоп Варна | Контакти | Свържете се с нас",
+            description: "Мъжко Подстригване и Бръснене във Варна - Барбершоп | Контакти | Свържете се с нас",
+        }
+    }
 
     const router = useRouter()
 
@@ -29,6 +41,7 @@ const ContactUs = () => {
 
     return ( 
         <main>
+            <NextSeo {...SEO} />
             <div className="container">
             <h1 data-aos="fade-right">{t.h1Contacts}</h1>
             <section className="contacts">
@@ -39,7 +52,7 @@ const ContactUs = () => {
                         <a href="tel:0887138878">0887 / 138 878</a>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="400">
-                        <h2><Link href="https://calendly.com/jozeph/appointments"><a target="_blank">{t.onlineR}</a></Link></h2>
+                        <h2><Link href="https://calendly.com/barbers_crew/booking"><a target="_blank">{t.onlineR}</a></Link></h2>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="800">
                         <h2>e-mail:</h2>

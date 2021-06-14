@@ -9,6 +9,11 @@
   margin: 20px 0;
   padding:80px 0 40px 0;
   line-height: 38px;
+  text-shadow: rgb(32 32 32) 3px 3px 3px;
+}
+
+.mainTitles h2{
+  text-shadow: rgb(32 32 32) 3px 3px 3px;
 }
 
 .mainBtn{
@@ -205,16 +210,29 @@
   padding: 0px 0px 60px 0;
 }
 
-.cardPicture{
+.cardPicture1{
   width: 300px;
   height: 216px;
-  background-image: url('/4m-300x216.png');
+  background-image: url('/Vasil300x216.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: #c69c6d;
 }
 
-.cardPicture h2{
+.cardPicture1 h2{
+  padding: 41px 0px 40px 10px;
+}
+
+.cardPicture2{
+  width: 300px;
+  height: 216px;
+  background-image: url('/Ivan300x216.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #c69c6d;
+}
+
+.cardPicture2 h2{
   padding: 41px 0px 40px 10px;
 }
 
@@ -320,6 +338,9 @@
 }
 .parallax{
   background-image: url('/American_Crew_mobile.webp');
+}
+.mainTitles h1{
+  padding:20px 0 10px 0;
 }
 }
 

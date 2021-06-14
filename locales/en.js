@@ -50,10 +50,10 @@ export default{
      //Section 4 Cards
      name1:'Vasil',
      name2:'Antonov',
-     nameText:'En text',
+     nameText:'Owner of Barbers CREW barbershop. A graduate of the Head Hunters Barber Academy. Having worked both abroad and in Bulgaria, he always strives for perfection and precision in every detail. Working for him is a pleasure and he will take care of your vision with attention, respect and professionalism.',
      name1a:'Ivan',
      name2a:'Antonov',
-     nameText2:'en Text',
+     nameText2:'Owner and founder of the Barbers Crew brand. A master from the Norwegian Barber School as well as a graduate of the HeadHunters School, he has been practicing and working in Norway for the last 10 years, creating his own unique style in hairstyles and beards. He likes to refine every detail to perfection. Ivan will give you tips on the most suitable hairstyle for you as well as guidelines on how to take care of and maintain your hair and beard.',
      //Footer
     fH3:'Contact us:',
     fPhone:'Phone for appointments:',

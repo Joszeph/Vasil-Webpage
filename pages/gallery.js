@@ -8,7 +8,19 @@ import "aos/dist/aos.css";
 import bg from '../locales/bg'
 import en from '../locales/en'
 
+import{NextSeo} from 'next-seo'
+
 const PictureGallery = () => {
+
+    const SEO = {
+        title: "Barbers Crew - Барбершоп Варна | Галерия със Снимки",
+        description: "Мъжко Подстригване и Бръснене във Варна - Барбершоп | Галерия със Снимки",
+    
+        openGraph:{
+            title: "Barbers Crew - Барбершоп Варна | Галерия със Снимки",
+            description: "Мъжко Подстригване и Бръснене във Варна - Барбершоп | Галерия със Снимки",
+        }
+    }
 
     const router = useRouter()
 
@@ -23,6 +35,7 @@ const PictureGallery = () => {
 
     return ( 
         <main>
+             <NextSeo {...SEO} />
             <div className="mainGallery">
                 <h1 data-aos="fade-right">{t.h1Gallery}</h1>
                     <div className="gallery">

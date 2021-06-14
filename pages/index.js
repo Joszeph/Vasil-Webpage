@@ -44,7 +44,7 @@ export default function Home() {
             {t.h2c}<br/>
             {t.h2d}</h2>
         <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="50">
-            <Link href="https://calendly.com/jozeph/appointments"><a target="_blank">{t.button}</a></Link>
+            <Link href="https://calendly.com/barbers_crew/booking"><a target="_blank">{t.button}</a></Link>
             </button>
       </div>
       <div className={styles.mainContacts}>
@@ -149,7 +149,7 @@ export default function Home() {
                    <div className={styles.cardContainer}>
                    {/* <!-- Card --> */}
                   <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
-                    <div className={styles.cardPicture}>
+                    <div className={styles.cardPicture1}>
                         <h2>{t.name1}<br />
                         {t.name2}</h2>
                          <div className={styles.cardIcons}>
@@ -164,7 +164,7 @@ export default function Home() {
                   {/* <!-- Card End --> */}
                    {/* <!-- Card --> */}
                   <div className={styles.card} data-aos="zoom-in" data-aos-delay="600">
-                    <div className={styles.cardPicture}>
+                    <div className={styles.cardPicture2}>
                         <h2>{t.name1a}<br />
                         {t.name2a}</h2>
                          <div className={styles.cardIcons}>

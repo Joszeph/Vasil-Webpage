@@ -18,6 +18,8 @@
 .aboutText p{
   line-height: 25px;
   margin:0;
+  text-shadow: rgb(32 32 32) 3px 3px 3px;
+  
 }
 
 .scissors{
@@ -68,16 +70,29 @@
     padding: 0px 0px 40px 0;
   }
   
-  .cardPicture{
+  .cardPicture1{
     width: 300px;
     height: 216px;
-    background-image: url('/4m-300x216.png');
+    background-image: url('/Vasil300x216.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: #c69c6d;
   }
   
-  .cardPicture h2{
+  .cardPicture1 h2{
+    padding: 41px 0px 40px 10px;
+  }
+
+  .cardPicture2{
+    width: 300px;
+    height: 216px;
+    background-image: url('/Ivan300x216.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #c69c6d;
+  }
+  
+  .cardPicture2 h2{
     padding: 41px 0px 40px 10px;
   }
   
@@ -115,5 +130,8 @@
     .ourTeam{
       background-position-x: 86px;
       background-position-y: 724px;
+    }
+    .aboutText p{
+      margin-top: 20px;
     }
   }
