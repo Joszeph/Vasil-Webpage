@@ -87,4 +87,7 @@ export default{
     //Contacts Page
     h1Contacts:'Contact with us:',
     h2Address:'Address:',
+
+    // Prices
+    h1Prices:'Services and Prices:',
     }

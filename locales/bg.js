@@ -88,5 +88,9 @@ export default{
     //Contacts Page
     h1Contacts:'Свържете се с нас:',
     h2Address:'Адрес:',
+
+
+    // Prices
+    h1Prices:'Услуги и Цени:',
     
 }
