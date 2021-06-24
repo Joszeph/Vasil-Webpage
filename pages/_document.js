@@ -14,10 +14,10 @@ class MyDocument extends Document {
                 <link rel="icon" href="/Barbers_Crew_fav_icon.ico" />
                 <link rel="preload"/>
                 <meta name="theme-color" content="#33333"/>
-                <meta property="og:image" content="/Logo_Barbers_Crew.png"/> 
+                <meta property="og:image" content="/facebook_logo.png"/> 
                 {/* <meta property="og:image:type" content="image/png"/> */}
-                <meta property="og:image:width" content="200"/>
-                <meta property="og:image:height" content="200"/>
+                <meta property="og:image:width" content="700"/>
+                <meta property="og:image:height" content="700"/>
                 <meta name="description" content="Мъжко Подстригване, Бръснене, Мъжки Прически, Стайлинг на Коса и Грижа за Брадата - Барбершоп Варна - Barbers Crew"/>
                 <meta property="og:title" content="Barbers Crew - Barber Shop - Варна. Мъжки Прически, Стайлинг на Коса и Грижа за Брадата" />
                 <meta property="og:url" content="www.barberscrew.bg" />
