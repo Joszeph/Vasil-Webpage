@@ -17,12 +17,12 @@ export const photos = [
     },
     {
       src: '/pics/4.jpeg',
-      width: 1,
+      width: 0.8,
       height: 1
     },
     {
       src: '/pics/5.jpeg',
-      width: 1,
+      width: 0.8,
       height: 1
     },
     {
@@ -72,13 +72,13 @@ export const photos = [
     },
     {
       src: '/pics/15.jpeg',
-      width: 1.5,
-      height: 1.5
+      width: 0.8,
+      height: 1
     },
     {
       src: '/pics/16.jpeg',
-      width: 1.5,
-      height: 1.5
+      width: 0.8,
+      height: 1
     },
     {
       src: '/pics/17a.jpg',
