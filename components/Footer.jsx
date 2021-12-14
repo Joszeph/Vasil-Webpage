@@ -23,7 +23,7 @@ const Footer = () => {
                         <img src="/youtube_footer_icon.webp" alt="youtube_footer_icon"/>
                     </div>
                     <div className="cRight">
-                        <p>Copyright ©Barbers Crew 2021</p>
+                        <p>Copyright © Barbers Crew 2022</p>
                         <p>All rights reserved</p>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
             <div className="footer2">
             <div className="designInfo">
-            <a href="mailto:iodesign@live.com"><p>Web Development by Mighty Mint</p></a>    
+            <a href="mailto:iodesign@live.com"><p>Web Development by ioDesign</p></a>    
             </div>
             </div>
             <style jsx>{`
