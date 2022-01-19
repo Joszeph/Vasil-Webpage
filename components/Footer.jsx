@@ -31,9 +31,11 @@ const Footer = () => {
                     <h3>{t.fH3}</h3>
                     <div>
                         <img src="/phone_icon.webp" alt="phone_icon" />
-                        <a href="tel:0887138 878">
                         <label>{t.fPhone}</label><br/>
-                        0887 / 138 878</a><br />
+                        <div className="footerTels">
+                        <a href="tel:0887608878">0887 / 608 878</a><br/>
+                        <a href="tel:0887138878">0887 / 138 878</a><br />
+                        </div>
                     </div>
                     <div>
                         <img src="/reserve_icon.png" alt="reserve_icon" />
@@ -79,6 +81,10 @@ const Footer = () => {
             <style jsx>{`
                 footer{
                     background-color: #163852;
+                }
+
+                .footerTels{
+                    margin-left:35px;
                 }
                 
                 .footerContainer{
