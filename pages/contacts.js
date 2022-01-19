@@ -13,6 +13,11 @@ const GoogleMap = dynamic(() => import('../components/GoogleMap'), {
     ssr: false
   })
 
+  const GoogleMap2 = dynamic(() => import('../components/GoogleMap2'), {
+    loading: () => "Loading...",
+    ssr: false
+  })
+
   import bg from '../locales/bg'
   import en from '../locales/en'
 
@@ -44,11 +49,12 @@ const ContactUs = () => {
             <NextSeo {...SEO} />
             <div className="container">
             <h1 data-aos="fade-right">{t.h1Contacts}</h1>
-            <section className="contacts">
+            <section className="contacts"> 
                 <div className="map"><GoogleMap /></div>
                 <div className="infoContacts">
                     <div data-aos="zoom-in" data-aos-delay="200">
                         <h2>{t.fPhone}</h2>
+                        <a href="tel:0887608878">0887 / 608 878</a><br />
                         <a href="tel:0887138878">0887 / 138 878</a>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="400">
@@ -60,13 +66,27 @@ const ContactUs = () => {
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="1000">
                         <h2>{t.h2Address}</h2>
-                        <address>{t.addressA}<br />
-                        {t.addressB}</address>
+                        <address>{t.addressA}</address>
+                    </div>
+                </div>
+            </section>
+            <section className="contacts contactMapTwo"> 
+                <div className="map"><GoogleMap2 /></div>
+                <div className="infoContacts">
+                    <div data-aos="zoom-in" data-aos-delay="1000">
+                        <h2>{t.h2Address}</h2>
+                        <address>{t.addP}</address>
                     </div>
                 </div>
             </section>
             </div>
             <style jsx>{`
+            main{
+                background-image: url('/backcon.webp');
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding:15px;
+            }
             .container{
                 max-width: 1200px;
                 margin: 0 auto;
@@ -77,7 +97,7 @@ const ContactUs = () => {
                 color:#e9e9e7;
             }
 
-            h2{
+            h2,a,address{
                 text-shadow: 2px 1px 4px #000000a6;
             }
             
@@ -110,6 +130,10 @@ const ContactUs = () => {
 
             address{
                 line-height:25px;
+            }
+
+            .contactMapTwo{
+                margin-top:25px;
             }
             
             @media only screen and (max-width: 1239px) {
