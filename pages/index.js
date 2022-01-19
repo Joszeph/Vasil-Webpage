@@ -57,22 +57,22 @@ export default function Home() {
         </div>
         <div className={styles.contactsInfo}>
             <img src="/phone_icon.webp" alt="phone_icon_Barbers_Crew"  width={32} height={32}/>
-            <div>
-                <h3><a href="tel:0887138 878">0887 / 138 878</a></h3>
-                <p>{t.telP}</p>
+            <div className={styles.tel}>
+                <h4><a href="tel:0887608878">0887 / 608 878</a></h4>
+                <h4><a href="tel:0887138878">0887 / 138 878</a></h4>
+                <p className={styles.telP}>{t.telP}</p>
             </div>
             <img src="/location_icon.webp" alt="location_icon_Barbers_Crew"  width={32} height={32}/>
             <div>
             <Link href="/contacts"><a>
-            <h3>
-                {t.addH3}</h3>
-                <p>{t.addP}</p>
-                </a></Link>
+                <h4>{t.addH3}</h4>
+                <h4>{t.addP}</h4>
+                </a></Link> 
                 
             </div>
             <img src="/clock_icon.webp" alt="clock_icon_Barbers_Crew"  width={32} height={32}/>
             <div>
-                <h3>{t.workH3}</h3>
+                <h4>{t.workH3}</h4>
                 <p>{t.workH}</p>
             </div>
         </div>
