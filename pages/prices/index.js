@@ -79,7 +79,7 @@ const Prices = ({posts, body}) => {
                         <p>{t.Saturday}</p>
                         <p>{t.Sunday}</p>
                         <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="50">
-            <Link href="https://calendly.com/barbers_crew/booking"><a target="_blank">{t.button}</a></Link>
+            <Link href="https://calendly.com/barbers_crew/app"><a target="_blank">{t.button}</a></Link>
             </button>
                 </div>
               
