@@ -58,7 +58,7 @@ const ContactUs = () => {
                         <a href="tel:0887138878">0887 / 138 878</a>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="400">
-                        <h2><Link href="https://calendly.com/barbers_crew/booking"><a target="_blank">{t.onlineR}</a></Link></h2>
+                        <h2><Link href="https://calendly.com/barbers_crew/app"><a target="_blank">{t.onlineR}</a></Link></h2>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="800">
                         <h2>e-mail:</h2>
