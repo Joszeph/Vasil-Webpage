@@ -70,7 +70,7 @@ const Footer = () => {
                     <Link href="/prices"><a>{t.fBtn3}</a></Link>
                     <Link href="/gallery"><a>{t.fBtn4}</a></Link>
                     <Link href="/contacts"><a>{t.fBtn5}</a></Link>
-                    <Link href="https://calendly.com/barbers_crew/booking"><a target="_blank">{t.fBtn6}</a></Link>
+                    <Link href="https://calendly.com/barbers_crew/app"><a target="_blank">{t.fBtn6}</a></Link>
                 </div>
             </div>
             <div className="footer2">
