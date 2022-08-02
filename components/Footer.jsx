@@ -39,7 +39,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <img src="/reserve_icon.png" alt="reserve_icon" />
-                        <Link href="https://calendly.com/barbers_crew/booking">
+                        <Link href="https://calendly.com/barbers_crew/app">
                         <a target="_blank">{t.onlineR}</a></Link> <br />
                     </div>
                     <div>
