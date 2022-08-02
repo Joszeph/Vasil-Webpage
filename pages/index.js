@@ -45,7 +45,7 @@ export default function Home() {
             {t.h2c}<br/>
             {t.h2d}</h2>
         <button className={styles.mainBtn} data-aos="zoom-in" data-aos-delay="50">
-            <Link href="https://calendly.com/barbers_crew/booking"><a target="_blank">{t.button}</a></Link>
+            <Link href="https://calendly.com/barbers_crew/app"><a target="_blank">{t.button}</a></Link>
             </button>
       </div>
       <div className={styles.mainContacts}>
